@@ -4,7 +4,7 @@ This is a simple tutorial which explains how to design your own web interface fo
 
 ### Requirements for *loc*BLAST Setup
 
-In this tutorial, I have given a brief explanation about embedding the latest NCBI BLAST+ (the latest version of NCBI BLAST+ as on September 29, 2017 is **2.60**.) in any PHP enabled web server. The latest version of NCBI BLAST+ (standalone command-line BLAST programs) can be downloaded from the FTP server of NCBI ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST)). A simple PHP supporting web server is enough to run the local BLAST program through the web browser. Follow the steps given below to setup and run the _loc_<span style="color:blue">BLAST</span> program.
+In this tutorial, I have given a brief explanation about embedding the latest NCBI BLAST+ (the latest version of NCBI BLAST+ as on September 29, 2017 is **2.60**.) in any PHP enabled web server. The latest version of NCBI BLAST+ (standalone command-line BLAST programs) can be downloaded from the FTP server of NCBI ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST)). A simple PHP supporting web server is enough to run the local BLAST program through the web browser. Follow the steps given below to setup and run the *loc*BLAST program.
 
 **1.** Download the compressed NCBI BLAST+ software (I have downloaded [ncbi-blast-2.6.0+-x64-win64.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.6.0+-x64-win64.tar.gz) for Windows 64-bit OS) from the NCBI FTP server.
 
