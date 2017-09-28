@@ -1,4 +1,4 @@
-<div style="color: black; font-family: 'times new roman', serif; font-size: 12pt; text-align: justify;">[![locBLAST Input](http://drive.google.com/uc?export=view&id=0BzYndv9w528iUktzRVc1bWs4RjA)](http://drive.google.com/uc?export=view&id=0BzYndv9w528iUktzRVc1bWs4RjA)  
+[![locBLAST Input](http://drive.google.com/uc?export=view&id=0BzYndv9w528iUktzRVc1bWs4RjA)](http://drive.google.com/uc?export=view&id=0BzYndv9w528iUktzRVc1bWs4RjA)  
 
 This is a simple tutorial which explains how to design your own web interface for NCBI BLAST+ to perform local and online database search using PHP in webserver. The PHP library _loc_<span style="color:blue">BLAST</span> executes the NCBI BLAST+ programs using `exec()` function through passing parameters from the HTML form fields. In _loc_<span style="color:blue">BLAST</span>, two list boxes were used to select program & database, and text area & file upload is used to input query sequence in the FASTA file format. A FASTA file validation function is included to validate the query sequence before executing the BLAST programs. The _loc_<span style="color:blue">BLAST</span> PHP library and test database files were freely available at [GitHub](https://github.com/AshokHub/locBLAST/).
 
@@ -92,5 +92,3 @@ AGVRVGVPQVSDLAAEAVVLHYTDWLHPEDPARLREALSDVVGDHNVVCPVAQLAGRLAA
 QGARVYAYVFEHRASTLSWPLWMGVPHGYEIEFIFGIPLDPSRNYTAEEKIFAQRLMRYW
 ANFARTGDPNEPRDPKAPQWPPYTAGAQQYVSLDLRPLEVRRGLRAQACAFWNRFLPKLL
 SAT</pre>
-
-</div>
