@@ -1,6 +1,6 @@
 This is a simple tutorial which explains how to design your own web interface for NCBI BLAST+ to perform local and online database search using PHP in webserver. The PHP library *loc*BLAST executes the NCBI BLAST+ programs using `exec()` function through passing parameters from the HTML form fields. In *loc*BLAST, two list boxes were used to select program & database, and text area & file upload is used to input query sequence in the FASTA file format. A FASTA file validation function is included to validate the query sequence before executing the BLAST programs. The *loc*BLAST PHP library and test database files were freely available at [GitHub](https://github.com/AshokHub/locBLAST/).
 
-![locBLAST Input](http://drive.google.com/uc?export=view&id=0BzYndv9w528iUktzRVc1bWs4RjA)
+![locBLAST Input](https://raw.githubusercontent.com/AshokHub/locBLAST/master/locBLAST%20Input.jpg)
 
 ### Requirements for *loc*BLAST Setup
 
@@ -16,11 +16,11 @@ In this tutorial, I have given a brief explanation about embedding the latest NC
 
 **5.** Open the URL [http://localhost/locBLAST](http://localhost/locBLAST) in the web browser to run *loc*BLAST program.
 
-![locBLAST in Browser](http://drive.google.com/uc?export=view&id=0BzYndv9w528iTWlGckdxUzVGZ0k)
+![locBLAST in Browser](https://raw.githubusercontent.com/AshokHub/locBLAST/master/locBLAST.jpg)
 
 **6.** Click the hyperlink **DEMO** and **Search** button to test local database search. The default parameters will generate an HTML file formatted BLAST search report.
 
-![locBLAST Output](http://drive.google.com/uc?export=view&id=0BzYndv9w528icVNmYU5CVDZtWlE)
+![locBLAST Output](https://raw.githubusercontent.com/AshokHub/locBLAST/master/locBLAST%20Output.jpg)
 
 The form fields in *loc*BLAST program can be extended with custom form fields to perform advanced search. Moreover, desired database files can be downloaded from the NCBI FTP directory ([ftp://ftp.ncbi.nih.gov](ftp://ftp.ncbi.nih.gov)) and copied to the **db** directory to perform offline database search.
 
