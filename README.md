@@ -26,7 +26,7 @@ The form fields in *loc*BLAST program can be extended with custom form fields to
 
 ### Custom Database Creation
 
-We can also create custom database using **makeblastdb** program present in the **locBLAST** directory. To create a custom database, copy the FASTA file formatted multiple sequence file to the **db** directory. Then open the **db** directory and press **ALT** key + **Right** mouse click to open command-line window directing to the current directory. Enter the command "`makeblastdb.exe -in db/pdt.fas -out db/pdt -dbtype prot -title PDTDB`" to create a custom database named **PDTDB** (already included in the **db** folder.
+We can also create custom database using **makeblastdb** program present in the **locBLAST** directory. To create a custom database, copy the FASTA file formatted multiple sequence file to the **db** directory. Then open the **db** directory and press **ALT** key + **Right** mouse click to open command-line window directing to the current directory. Enter the command "`makeblastdb.exe -in db/pdt.fas -out db/pdt -dbtype prot -title PDTDB`" to create a custom database named **PDTDB** (already included in the **db** folder).
 
 The FASTA file formatted multiple sequence file (**pdt.fas**)is given below:
 
