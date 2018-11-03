@@ -12,7 +12,7 @@ The implementation of [*loc*BLAST](https://github.com/AshokHub/locBLAST) in a we
 
 A simple protocol to setup the [*loc*BLAST](https://github.com/AshokHub/locBLAST) is given below,
 
-**1.** Download the compressed NCBI BLAST+ suite from the NCBI FTP server ([ncbi-blast-2.7.1+-x64-linux.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz), for Linux 64-bit operating system).
+**1.** Download the compressed NCBI BLAST+ suite from the NCBI FTP server ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz), for Linux 64-bit operating system).
 
 **2.** Create a directory named **locBLAST** (optional) in the parent web directory (usually named **htdocs**, **www**, **wwwroot**, or **webpath**).
 
