@@ -12,17 +12,12 @@ The implementation of [*loc*BLAST](https://github.com/AshokHub/locBLAST) in a we
 
 A simple protocol to setup the [*loc*BLAST](https://github.com/AshokHub/locBLAST) is given below,
 
-**1.** Download the compressed NCBI BLAST+ suite from the NCBI FTP server ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz), for Linux 64-bit operating system).
-
-**2.** Create a directory named **locBLAST** (optional) in the parent web directory (usually named **htdocs**, **www**, **wwwroot**, or **webpath**).
-
-**3.** Decompress the [ncbi-blast-2.7.1+-x64-linux.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz) file and copy all the files present in the **bin** folder to **locBLAST** directory.
-
-**4.** Download [*loc*BLAST](https://github.com/AshokHub/locBLAST/) library from the GitHub and copy to **locBLAST** directory.
-
-**5.** Open the URL [http://localhost/locBLAST](http://localhost/locBLAST) in the web browser to run BLAST+ programs.
-
-**6.** Click the hyperlink **DEMO** and **Search** button to test local database search. The default parameters will generate an graphical search report containing graphical color key, tabular summary, and formatted alignment.
+1. Download the compressed NCBI BLAST+ suite from the NCBI FTP server ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz), for Linux 64-bit operating system).
+2. Create a directory named **locBLAST** (optional) in the parent web directory (usually named **htdocs**, **www**, **wwwroot**, or **webpath**).
+3. Decompress the [ncbi-blast-2.7.1+-x64-linux.tar.gz](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.7.1+-x64-linux.tar.gz) file and copy all the files present in the **bin** folder to **locBLAST** directory.
+4. Download [*loc*BLAST](https://github.com/AshokHub/locBLAST/) library from the GitHub and copy to **locBLAST** directory.
+5. Open the URL [http://localhost/locBLAST](http://localhost/locBLAST) in the web browser to run BLAST+ programs.
+6. Click the hyperlink **DEMO** and **Search** button to test local database search. The default parameters will generate an graphical search report containing graphical color key, tabular summary, and formatted alignment.
 
 The form fields in [*loc*BLAST](https://github.com/AshokHub/locBLAST) library can be extended or modified with custom form fields to perform advanced search. Moreover, desired database files of biological databases such as PDB, UniProtKB/Swiss-Prot, EST, RefSeq., etc. can be downloaded from the NCBI FTP directory ([ftp://ftp.ncbi.nih.gov/blast/db/](ftp://ftp.ncbi.nih.gov/blast/db/)) and copied to the **db** directory to perform offline database search.
 
