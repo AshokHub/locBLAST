@@ -2,7 +2,7 @@
 
 [*loc*BLAST](https://github.com/AshokHub/locBLAST) is a PHP library for enriching command-line NCBI BLAST+ programs to an interactive graphical user interface. It performs both local and remote database search through a PHP supported web server. The PHP library executes the command-line NCBI BLAST+ programs using `exec()` function by passing parameters from the HTML form fields. In PHP, the `system()`, `exec()`, `passthru()`, and `shell_exec()` functions are used to pass system commands.
 
-The [*loc*BLAST](https://github.com/AshokHub/locBLAST) allows users to input query sequence by pasting in the text box or file uploading. Currently, [*loc*BLAST](https://github.com/AshokHub/locBLAST) supports nine BLAST+ programs such as *blastn*, *blastp*, *blastx*, *tblastn*, *tblastx*, *deltablast*, *psiblast*, *rpsblast*, and *rpstblastn* for sequence search. Moreover, the latest release [***loc*BLAST v2.0**](https://github.com/AshokHub/locBLAST) supports various platforms such as Windows, Linux, and MacOS. The [*loc*BLAST](https://github.com/AshokHub/locBLAST) PHP library and test database files were freely available at [GitHub](https://github.com/AshokHub/locBLAST/).
+The [*loc*BLAST](https://github.com/AshokHub/locBLAST) allows users to input query sequence by pasting in the text box or file uploading. Currently, [*loc*BLAST](https://github.com/AshokHub/locBLAST) supports nine BLAST+ programs such as `blastn`, `blastp`, `blastx`, `tblastn`, `tblastx`, `deltablast`, `psiblast`, `rpsblast`, and `rpstblastn` for sequence search. Moreover, the latest release [***loc*BLAST v2.0**](https://github.com/AshokHub/locBLAST) supports various platforms such as Windows, Linux, and MacOS. The [*loc*BLAST](https://github.com/AshokHub/locBLAST) PHP library and test database files were freely available at [GitHub](https://github.com/AshokHub/locBLAST/).
 
 <p align="center"><img src="https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Input.jpg" alt="locBLAST Home Page"></p>
 
@@ -19,7 +19,7 @@ A simple protocol to setup the [*loc*BLAST](https://github.com/AshokHub/locBLAST
 5. Open the URL [http://localhost/locBLAST](http://localhost/locBLAST) in the web browser to run BLAST+ programs.
 6. Click the hyperlink **DEMO** and **Search** button to test local database search. The default parameters will generate an graphical search report containing graphical color key, tabular summary, and formatted alignment.
 
-The form fields in [*loc*BLAST](https://github.com/AshokHub/locBLAST) library can be extended or modified with custom form fields to perform advanced search. Moreover, desired database files of biological databases such as PDB, UniProtKB/Swiss-Prot, EST, RefSeq., etc. can be downloaded from the NCBI FTP directory ([ftp://ftp.ncbi.nih.gov/blast/db/](ftp://ftp.ncbi.nih.gov/blast/db/)) and copied to the **db** directory to perform offline database search.
+The form fields in [*loc*BLAST](https://github.com/AshokHub/locBLAST) library can be extended or modified with custom form fields to perform advanced search. Moreover, desired database files of biological databases such as [PDB](https://www.rcsb.org/), [UniProtKB/Swiss-Prot](https://www.uniprot.org/), [EST](https://www.ncbi.nlm.nih.gov/nucest), [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/)., etc. can be downloaded from the NCBI FTP directory ([ftp://ftp.ncbi.nih.gov/blast/db/](ftp://ftp.ncbi.nih.gov/blast/db/)) and copied to the **db** directory to perform offline database search.
 
 ### Custom Database Creation
 
@@ -92,7 +92,7 @@ ANFARTGDPNEPRDPKAPQWPPYTAGAQQYVSLDLRPLEVRRGLRAQACAFWNRFLPKLL
 SAT
 ```
 
-The custom profile/CDD database can be created using command  `./makeprofiledb -in db/CDD/Smart.pn -out db/CDD/Smart -dbtype rps -title SMART.v6.0` for  *psiblast*, *rpsblast*, and *rpstblastn* programs, and command `./makeprofiledb -in db/CDD/cdd_delta.pn -out db/CDD/cdd_delta -dbtype delta -title cdd_delta` for *deltablast* program.
+The custom profile/CDD database can be created using command  `./makeprofiledb -in db/CDD/Smart.pn -out db/CDD/Smart -dbtype rps -title SMART.v6.0` for  `psiblast`, `rpsblast`, and `rpstblastn` programs, and command `./makeprofiledb -in db/CDD/cdd_delta.pn -out db/CDD/cdd_delta -dbtype delta -title cdd_delta` for `deltablast` program.
 
 ### Support
 Please feel free to sent your queries, suggestions and/or comments related to [*loc*BLAST](https://github.com/AshokHub/locBLAST) program to [ashok.bioinformatics@gmail.com](ashok.bioinformatics@gmail.com) or [ashok@biogem.org](ashok@biogem.org).
