@@ -6,7 +6,7 @@ The [*loc*BLAST](https://github.com/AshokHub/locBLAST) allows users to input que
 
 <p align="center"><img src="https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Input.jpg" alt="locBLAST Home Page"></p>
 
-### Implementation
+## Implementation
 
 The implementation of [*loc*BLAST](https://github.com/AshokHub/locBLAST) in a web server is very easy. It requires standalone NCBI BLAST+ suite and [*loc*BLAST](https://github.com/AshokHub/locBLAST) library. The latest release of NCBI BLAST+ (as on Nov 3, 2018, the stable release is  2.7.1 and alpha release is 2.8.0) can be downloaded from the NCBI FTP server ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST)). A simple PHP supporting web server is enough to run the BLAST+ program through the web browser.
 
@@ -21,7 +21,7 @@ A simple protocol to setup the [*loc*BLAST](https://github.com/AshokHub/locBLAST
 
 The form fields in [*loc*BLAST](https://github.com/AshokHub/locBLAST) library can be extended or modified with custom form fields to perform advanced search. Moreover, desired database files of biological databases such as [PDB](https://www.rcsb.org/), [UniProtKB/Swiss-Prot](https://www.uniprot.org/), [EST](https://www.ncbi.nlm.nih.gov/nucest), [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/)., etc. can be downloaded from the NCBI FTP directory ([ftp://ftp.ncbi.nih.gov/blast/db/](ftp://ftp.ncbi.nih.gov/blast/db/)) and copied to the **db** directory to perform offline database search.
 
-### Custom Database Creation
+## Custom Database Creation
 
 We can create custom database using **makeblastdb** (for nucleotide or protein) or **makeprofiledb** (for profiles) program present in the **locBLAST** directory. To create a custom database, copy the FASTA file formatted multiple sequence file to the **db** directory. Then run the command `./makeblastdb -in db/pdt.fas -out db/pdt -dbtype prot -title PDTDB` directing to the **locBLAST** directory to create a protein custom database named **PDTDB** (already included in the **db** folder).
 
@@ -94,9 +94,9 @@ SAT
 
 The custom profile/CDD database can be created using command  `./makeprofiledb -in db/CDD/Smart.pn -out db/CDD/Smart -dbtype rps -title SMART.v6.0` for  `psiblast`, `rpsblast`, and `rpstblastn` programs, and command `./makeprofiledb -in db/CDD/cdd_delta.pn -out db/CDD/cdd_delta -dbtype delta -title cdd_delta` for `deltablast` program.
 
-### Support
+## Support
 Please feel free to sent your queries, suggestions and/or comments related to [*loc*BLAST](https://github.com/AshokHub/locBLAST) program to [ashok.bioinformatics@gmail.com](ashok.bioinformatics@gmail.com) or [ashok@biogem.org](ashok@biogem.org).
 
 
-### License
+## License
 [*loc*BLAST](https://github.com/AshokHub/locBLAST) is made available under version 3 of the GNU Lesser General Public License.
