@@ -94,6 +94,31 @@ SAT
 
 The custom profile/CDD database can be created using command  `./makeprofiledb -in db/CDD/Smart.pn -out db/CDD/Smart -dbtype rps -title SMART.v6.0` for  `psiblast`, `rpsblast`, and `rpstblastn` programs, and command `./makeprofiledb -in db/CDD/cdd_delta.pn -out db/CDD/cdd_delta -dbtype delta -title cdd_delta` for `deltablast` program.
 
+## What is New?
+
+The current release *loc*BLAST v2.0 has added list of features below,
+
+* The home page of [*loc*BLAST v2.0](https://github.com/AshokHub/locBLAST) web form has added with more features, (1) progress bar and status bar, (2) advanced BLAST+ programs `deltablast`, `psiblast`, `rpsblast`, and `rpstblastn`, (3) hyperlink to detailed program description page, with short title, (4) graphical or plain text output, (5) advanced algorithm parameters, (6) tutorial page, and (7) mouse over tooltip text description of the keyword.
+
+  ![locBLAST Web Form](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Input_Advanced.jpg)
+
+* Graphical overview of the sequence alignment hits with mouse over tooltip text description on hyperlinks. Color keys represents the score of the sequence alignment.
+
+  ![Blast Color Key](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Color_Key.jpg)
+
+* Summary table of sequence alignment hits consisting of sequence description, total score, percentage of query coverage, e-value, identity, and accession number. Hyperlinks to alignment hit section and reference link to biological sequence database.
+
+![BLAST Tabular Summary](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Summary_Table.jpg)
+
+* Formatted sequence alignment for plus, minus, six-reading frames, and translated nucleotide sequences. Hyperlinks to biological sequence database in header description. Hide or show (toggle) options to large descriptions. Allows to save sequence to the disk in FASTA file format.
+
+![Blast Color Key](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Frames.jpg)
+
+## Outputs
+The snapshot of graphical output is [here](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/GOutput_Full.jpg).
+
+The snapshot of plain text output is [here](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/POutput_Full.jpg).
+
 ## Support
 Please feel free to sent your queries, suggestions and/or comments related to [*loc*BLAST](https://github.com/AshokHub/locBLAST) program to [ashok.bioinformatics@gmail.com](ashok.bioinformatics@gmail.com) or [ashok@biogem.org](ashok@biogem.org).
 
