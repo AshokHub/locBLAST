@@ -6,7 +6,7 @@ The [*loc*BLAST](https://github.com/AshokHub/locBLAST) allows users to input que
 
 <p align="center"><img src="https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Input.jpg" alt="locBLAST Home Page"></p>
 
-## Implementation
+## [Implementation](https://github.com/AshokHub/locBLAST#implementation)
 
 The implementation of [*loc*BLAST](https://github.com/AshokHub/locBLAST) in a web server is very easy. It requires standalone NCBI BLAST+ suite and [*loc*BLAST](https://github.com/AshokHub/locBLAST) library. The latest release of NCBI BLAST+ (as on Nov 3, 2018, the stable release is  2.7.1 and alpha release is 2.8.0) can be downloaded from the NCBI FTP server ([ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST](ftp://ftp.ncbi.nih.gov/blast/executables/blast+/LATEST)). A simple PHP supporting web server is enough to run the BLAST+ program through the web browser.
 
@@ -21,7 +21,7 @@ A simple protocol to setup the [*loc*BLAST](https://github.com/AshokHub/locBLAST
 
 The form fields in [*loc*BLAST](https://github.com/AshokHub/locBLAST) library can be extended or modified with custom form fields to perform advanced search. Moreover, desired database files of biological databases such as [PDB](https://www.rcsb.org/), [UniProtKB/Swiss-Prot](https://www.uniprot.org/), [EST](https://www.ncbi.nlm.nih.gov/nucest), [RefSeq](https://www.ncbi.nlm.nih.gov/refseq/)., etc. can be downloaded from the NCBI FTP directory ([ftp://ftp.ncbi.nih.gov/blast/db/](ftp://ftp.ncbi.nih.gov/blast/db/)) and copied to the **db** directory to perform offline database search.
 
-## Custom Database Creation
+## [Custom Database Creation](https://github.com/AshokHub/locBLAST#custom-database-creation)
 
 We can create custom database using **makeblastdb** (for nucleotide or protein) or **makeprofiledb** (for profiles) program present in the **locBLAST** directory. To create a custom database, copy the FASTA file formatted multiple sequence file to the **db** directory. Then run the command `./makeblastdb -in db/pdt.fas -out db/pdt -dbtype prot -title PDTDB` directing to the **locBLAST** directory to create a protein custom database named **PDTDB** (already included in the **db** folder).
 
@@ -94,9 +94,9 @@ SAT
 
 The custom profile/CDD database can be created using command  `./makeprofiledb -in db/CDD/Smart.pn -out db/CDD/Smart -dbtype rps -title SMART.v6.0` for  `psiblast`, `rpsblast`, and `rpstblastn` programs, and command `./makeprofiledb -in db/CDD/cdd_delta.pn -out db/CDD/cdd_delta -dbtype delta -title cdd_delta` for `deltablast` program.
 
-## What is New?
+## [What is New?](https://github.com/AshokHub/locBLAST#what-is-new)
 
-The current release *loc*BLAST v2.0 has added list of features below,
+The current release [*loc*BLAST v2.0](https://github.com/AshokHub/locBLAST) has added list of features below,
 
 * The home page of [*loc*BLAST v2.0](https://github.com/AshokHub/locBLAST) web form has added with more features, (1) progress bar and status bar, (2) advanced BLAST+ programs `deltablast`, `psiblast`, `rpsblast`, and `rpstblastn`, (3) hyperlink to detailed program description page, with short title, (4) graphical or plain text output, (5) advanced algorithm parameters, (6) tutorial page, and (7) mouse over tooltip text description of the keyword.
 
@@ -114,14 +114,14 @@ The current release *loc*BLAST v2.0 has added list of features below,
 
 ![Blast Color Key](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/Frames.jpg)
 
-## Outputs
+## [Outputs](https://github.com/AshokHub/locBLAST#outputs)
 The snapshot of graphical output is [here](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/GOutput_Full.jpg).
 
 The snapshot of plain text output is [here](https://raw.githubusercontent.com/AshokHub/locBLAST/master/images/POutput_Full.jpg).
 
-## Support
+## [Support](https://github.com/AshokHub/locBLAST#support)
 Please feel free to sent your queries, suggestions and/or comments related to [*loc*BLAST](https://github.com/AshokHub/locBLAST) program to [ashok.bioinformatics@gmail.com](ashok.bioinformatics@gmail.com) or [ashok@biogem.org](ashok@biogem.org).
 
 
-## License
+## [License](https://github.com/AshokHub/locBLAST#license)
 [*loc*BLAST](https://github.com/AshokHub/locBLAST) is made available under version 3 of the GNU Lesser General Public License.
