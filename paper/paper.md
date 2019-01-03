@@ -7,7 +7,7 @@ tags:
   - Embedding BLAST+
   - locBLAST PHP Library
 authors:
-  - name: Ashok Kumar, T
+  - name: T. Ashok Kumar
     orcid: 0000-0003-2862-028X
     affiliation: 1
 affiliations:
