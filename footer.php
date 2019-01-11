@@ -23,7 +23,7 @@
 					<option value="refseq_protein -remote" id="refseq_protein">Reference Proteins Sequences (RefSeq_Protein)</option>
 					<option value="refseq_rna -remote" id="refseq_rna">Reference RNA Sequences (RefSeq_RNA)</option>
 					<option value="est -remote" id="est">Expressed Sequence Tags (EST)</option>
-					<option value="pdb -remote" id="pdb">Protein Data Bank proteins (PDB)</option>
+					<option value="pdb -remote" id="pdb">Protein Data Bank (PDB)</option>
 					<option value="pat -remote" id="pat">Patented Protein Sequences (PAT)</option>
 					<optgroup label="Offline DataBase">
 					<option value="db/test_na" id="test_na">Test Nucleotide Sequence</option>
