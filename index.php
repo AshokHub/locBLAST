@@ -243,20 +243,12 @@
 <body>
 <?php
 if(isset($_POST['search']) || isset($_POST['advsearch'])) {
-	$os = PHP_OS_FAMILY;
-	// $os = "Windows";	// PHP_OS_FAMILY = 'Windows', 'BSD', 'Darwin', 'Solaris', 'Linux' or 'Unknown'
-	if ($os = "Windows") {
+	if (strtoupper(substr(php_uname('s'), 0, 3)) === 'WIN') {
 		$osextn = ".exe";
 		$osstrt = "";
-	} elseif ($os = "Linux") {
-		$osextn = "";
-		$osstrt = "./";
-	} elseif ($os = "Darwin") {
-		$osextn = "";
-		$osstrt = "./";
 	} else {
 		$osextn = "";
-		$osstrt = "";
+		$osstrt = "./";
 	}
 
 	function convert_filter_string($filter_string, $program) {
