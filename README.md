@@ -126,4 +126,4 @@ Please feel free to sent your queries, suggestions and/or comments related to [*
 [*loc*BLAST](https://github.com/AshokHub/locBLAST) is made available under version 3 of the GNU Lesser General Public License.
 
 ## [Citation](https://github.com/AshokHub/locBLAST#citation)
-Ashok Kumar, T. (2019). locBLAST v2.0 - an improved PHP library for embedding standalone NCBI BLAST+ program to an interactive graphical user interface. [*biorxiv*](https://www.biorxiv.org/). [[Abstract]](https://www.biorxiv.org/content/10.1101/556225v1) [[PDF]](https://www.biorxiv.org/content/biorxiv/early/2019/02/21/556225.full.pdf)
+Ashok Kumar, T. (2019). locBLAST v2.0 - an improved PHP library for embedding standalone NCBI BLAST+ program to an interactive graphical user interface. [*bioRxiv*](https://www.biorxiv.org/). [[Abstract]](https://www.biorxiv.org/content/10.1101/556225v1) [[PDF]](https://www.biorxiv.org/content/biorxiv/early/2019/02/21/556225.full.pdf)
