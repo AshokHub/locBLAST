@@ -25,7 +25,7 @@
 						<option value="est -remote" id="est">Expressed Sequence Tags (EST)</option>
 						<option value="pdb -remote" id="pdb">Protein Data Bank (PDB)</option>
 						<option value="pat -remote" id="pat">Patented Protein Sequences (PAT)</option>
-						</optgroup>
+					</optgroup>
 					<optgroup label="Offline DataBase">
 						<option value="db/test_na" id="test_na">Test Nucleotide Sequence</option>
 						<option value="db/test_aa" id="test_aa">Test Protein Sequence</option>
