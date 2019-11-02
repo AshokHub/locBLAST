@@ -18,18 +18,20 @@
 				<b title="NR, NR/NT, SwissProt, RefSeq-Protein, RefSeq-RNA, EST, PDB, PAT, and PDTDB">Database:</b>&nbsp;
 				<select class="effect" id="datalib" name="datalib">
 					<optgroup label="Online DataBase">
-					<option value="nr -remote" id="nr" selected="selected">Non-redundant Protein/Nucleotide Sequences (NR/NT)</option>
-					<option value="swissprot -remote" id="swissprot">UniProtKB/Swiss-Prot (SwissProt)</option>
-					<option value="refseq_protein -remote" id="refseq_protein">Reference Proteins Sequences (RefSeq_Protein)</option>
-					<option value="refseq_rna -remote" id="refseq_rna">Reference RNA Sequences (RefSeq_RNA)</option>
-					<option value="est -remote" id="est">Expressed Sequence Tags (EST)</option>
-					<option value="pdb -remote" id="pdb">Protein Data Bank (PDB)</option>
-					<option value="pat -remote" id="pat">Patented Protein Sequences (PAT)</option>
+						<option value="nr -remote" id="nr" selected="selected">Non-redundant Protein/Nucleotide Sequences (NR/NT)</option>
+						<option value="swissprot -remote" id="swissprot">UniProtKB/Swiss-Prot (SwissProt)</option>
+						<option value="refseq_protein -remote" id="refseq_protein">Reference Proteins Sequences (RefSeq_Protein)</option>
+						<option value="refseq_rna -remote" id="refseq_rna">Reference RNA Sequences (RefSeq_RNA)</option>
+						<option value="est -remote" id="est">Expressed Sequence Tags (EST)</option>
+						<option value="pdb -remote" id="pdb">Protein Data Bank (PDB)</option>
+						<option value="pat -remote" id="pat">Patented Protein Sequences (PAT)</option>
+						</optgroup>
 					<optgroup label="Offline DataBase">
-					<option value="db/test_na" id="test_na">Test Nucleotide Sequence</option>
-					<option value="db/test_aa" id="test_aa">Test Protein Sequence</option>
-					<option value="db/CDD/Smart" id="Smart">Test SMART v6.0 Domain Database (SMART)</option>
-					<option value="db/pdt" id="pdt">Phytochemical &amp; Drug Target Database (PDTDB)</option>
+						<option value="db/test_na" id="test_na">Test Nucleotide Sequence</option>
+						<option value="db/test_aa" id="test_aa">Test Protein Sequence</option>
+						<option value="db/CDD/Smart" id="Smart">Test SMART v6.0 Domain Database (SMART)</option>
+						<option value="db/pdt" id="pdt">Phytochemical &amp; Drug Target Database (PDTDB)</option>
+					</optgroup>
 				</select>
 			</div>
 			<div class="gap">
