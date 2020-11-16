@@ -36,9 +36,7 @@
 			</div>
 			<div class="gap">
 				Enter sequence below in 
-				<abbr title="&gt;gi|532319|pir|TVFV2E|TVFV2E envelope protein&#13;ELRLRYCAPAGFALLKCNDADYDGFKTNCSNVSVVHCTNLMNTTVTTGLLLNGSYSENRT&#13;QIWQKHRTSNDSALILLNKHYNLTVTCKRPGNKTVLPVTIMAGLVFHSQKYNLRLRQAWC&#13;HFPSNWKGAWKEVKEEIVNLPKERYRGTNDPKRIFFQRQWGDPETANLWFNCHGEFFYCK&#13;MDWFLNYLNNLTVDADHNECKNTSGTKSGNKRAPGP">FASTA</abbr>  format (<a style="font-size:small" onclick="javascript:document.getElementById('program').value='blastp';
-				document.getElementById('datalib').value='db/pdt';
-				document.getElementById('sequence').value='>tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase\nMLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ\nDAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI\nGEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF\nLRSVFEDNSREEPIRHQRSVGTSARSGRSICT';" href="javascript:void()" title="Sample Protein Sequence">DEMO</a>)
+				<abbr title="&gt;AHG23159.1 polyprotein, partial [Dengue virus 2]&#13;SYSMCTGKFKIVKEIAETQHGTIVIRVQYEGDGSPCKIPFEITDLEKRHVLGRLITVNPI&#13;VTEKDSPVNIEAEPPFGDSYIIIGVEPGQLKLNWFKKGSSIGQMFETTMRGAKRMAILGD&#13;TAWDFGSLGGVFTSIGKALHQVFGAIYGAAFSGVSWTMKILIGVIITWIGMNSRSTSLSV&#13;SLVLVGVVTLYLGAMVQADSGCVVSWKNKELKCGSGIFITDNVHTWTEQYKFQPESPSKL&#13;ASAIQKAHEEGICGIRSVTRLENLMWKQITPELNHILSENEVKLTIMTGD">FASTA</abbr>  format (<a style="font-size:small" onclick="demo();" href="javascript:void()" title="Sample Protein Sequence">DEMO</a>)
 			</div>
 			<div class="gap">
 				<textarea class="effect" style="min-width: 498px;" name="sequence" id="sequence" rows="6" cols="60"></textarea>
@@ -61,7 +59,11 @@
 				<input class="effect" type="reset" name="reset" value="Reset">
 				<input class="effect" type="button" name="clear" value="Clear Sequence" onClick="document.getElementById('sequence').value=''; document.getElementById('sequence').focus();">
 				<input class="effect" type="submit" name="search" id="search" value="Search">
-				<a href="help.php" title="Tutorial"><div id="help"></div></a>
+				<div id="notify">
+					<div id="update_msg"></div>
+					<a href="javascript:void()" title="Update Check" onClick="return blastUpdate();"><div id="update"></div></a>
+					<a href="help.php" title="Tutorial"><div id="help"></div></a>
+				</div>
 			</div>
 			<div style="padding: 7px 0 5px 0">
 				<div class="gap"><hr class="hreffect" /></div>
