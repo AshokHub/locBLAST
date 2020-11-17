@@ -36,14 +36,16 @@
 			</div>
 			<div class="gap">
 				Enter sequence below in 
-				<abbr title="&gt;AHG23159.1 polyprotein, partial [Dengue virus 2]&#13;SYSMCTGKFKIVKEIAETQHGTIVIRVQYEGDGSPCKIPFEITDLEKRHVLGRLITVNPI&#13;VTEKDSPVNIEAEPPFGDSYIIIGVEPGQLKLNWFKKGSSIGQMFETTMRGAKRMAILGD&#13;TAWDFGSLGGVFTSIGKALHQVFGAIYGAAFSGVSWTMKILIGVIITWIGMNSRSTSLSV&#13;SLVLVGVVTLYLGAMVQADSGCVVSWKNKELKCGSGIFITDNVHTWTEQYKFQPESPSKL&#13;ASAIQKAHEEGICGIRSVTRLENLMWKQITPELNHILSENEVKLTIMTGD">FASTA</abbr>  format (<a style="font-size:small" onclick="demo();" href="javascript:void()" title="Sample Protein Sequence">DEMO</a>)
+				<abbr title="&gt;AHG23159.1 polyprotein, partial [Dengue virus 2]&#13;SYSMCTGKFKIVKEIAETQHGTIVIRVQYEGDGSPCKIPFEITDLEKRHVLGRLITVNPI&#13;VTEKDSPVNIEAEPPFGDSYIIIGVEPGQLKLNWFKKGSSIGQMFETTMRGAKRMAILGD&#13;TAWDFGSLGGVFTSIGKALHQVFGAIYGAAFSGVSWTMKILIGVIITWIGMNSRSTSLSV&#13;SLVLVGVVTLYLGAMVQADSGCVVSWKNKELKCGSGIFITDNVHTWTEQYKFQPESPSKL&#13;ASAIQKAHEEGICGIRSVTRLENLMWKQITPELNHILSENEVKLTIMTGD">FASTA</abbr>  format (<a style="font-size:small" onclick="javascript:document.getElementById('program').value='blastp';
+				document.getElementById('datalib').value='db/pdt';
+				document.getElementById('sequence').value='>AHG23159.1 polyprotein, partial [Dengue virus 2]\nSYSMCTGKFKIVKEIAETQHGTIVIRVQYEGDGSPCKIPFEITDLEKRHVLGRLITVNPI\nVTEKDSPVNIEAEPPFGDSYIIIGVEPGQLKLNWFKKGSSIGQMFETTMRGAKRMAILGD\nTAWDFGSLGGVFTSIGKALHQVFGAIYGAAFSGVSWTMKILIGVIITWIGMNSRSTSLSV\nSLVLVGVVTLYLGAMVQADSGCVVSWKNKELKCGSGIFITDNVHTWTEQYKFQPESPSKL\nASAIQKAHEEGICGIRSVTRLENLMWKQITPELNHILSENEVKLTIMTGD';" href="javascript:void()" title="Sample Protein Sequence">DEMO</a>)
 			</div>
 			<div class="gap">
 				<textarea class="effect" style="min-width: 498px;" name="sequence" id="sequence" rows="6" cols="60"></textarea>
 			</div>
 			<div class="gap">
 				Or load it from disk&nbsp;
-				<input class="effect" type="file" name="seqfile">
+				<input class="effect" type="file" name="seqfile" />
 			</div>
 			<div class="gap">
 				<div class="radio-container">
