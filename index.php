@@ -5,20 +5,6 @@
 	<title>locBLAST - Local NCBI BLAST+ Search</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript">//<![CDATA[
-	function download_fasta(filename, title, frm, to, seq) {
-		var text = "";
-		text += ">";
-		text += filename + " ";
-		text += title + " (";
-		text += frm + " to ";
-		text += to + ")";
-		text += seq;
-		var hiddenElement = document.createElement('a');
-		hiddenElement.href = 'data:text/fasta;charset=utf-8,' + encodeURIComponent(text);
-		hiddenElement.target = '_blank';
-		hiddenElement.download = filename + ".fasta";
-		hiddenElement.click();
-	}
 	window.onload = function() {
 		document.getElementById('pgm_desc').innerHTML = "<a href='blastp.php'>&lArr; Compares Protein Query vs Protein Database</a>";
 		//document.getElementById('tips').innerHTML = "Choose Program to Use and Database to Search";
@@ -37,6 +23,32 @@
 		document.getElementById('datalib').getElementsByTagName("option")[10].disabled = false;
 		document.getElementById('datalib').getElementsByTagName("option")[0].selected = true;
 	};
+	function download_fasta(filename, title, frm, to, seq) {
+		var text = "";
+		text += ">";
+		text += filename + " ";
+		text += title + " (";
+		text += frm + " to ";
+		text += to + ")";
+		text += seq;
+		var hiddenElement = document.createElement('a');
+		hiddenElement.href = 'data:text/fasta;charset=utf-8,' + encodeURIComponent(text);
+		hiddenElement.target = '_blank';
+		hiddenElement.download = filename + ".fasta";
+		hiddenElement.click();
+	}
+	function blastUpdate() {
+		var request = new XMLHttpRequest();
+		request.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById('update_msg').innerHTML = '<a href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST" title="Download">' + this.responseText + '</a>';
+			} else {
+				document.getElementById('update_msg').innerHTML = '<div id="loading"></div>';
+			}
+		};
+		request.open('POST', 'update.php', true);
+		request.send();
+	}
 	function prgmDesc() {
 		var program = document.getElementById("program").value;
 		if (program == "blastn") {
