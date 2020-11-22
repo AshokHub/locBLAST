@@ -184,6 +184,21 @@
 	}
 
 	function annotate($def) {
+		$pbn = preg_match_all('/pdb\|\K[^\|]*(?=\|)/', $def, $m0);
+		if ($pbn > 0) {
+			for ($i0 = 0; $i0 < $pbn; $i0++) {
+				$id0[$i0] = $m0[0][$i0];
+			}
+			$id0 = array_unique($id0);
+			$id0 = array_filter($id0);
+			$id0 = array_values($id0);
+			if (!empty($id0)) {
+				$n0 = count($id0);
+				for ($i0 = 0; $i0 < $n0; $i0++) {
+					$def = preg_replace("/$id0[$i0]/", "<a href=\"http://www.rcsb.org/pdb/explore/explore.do?structureId=$id0[$i0]\" id='ilnk' target='_blank'>". $id0[$i0] . "</a>", $def);
+				}
+			}
+		}
 		$pn = preg_match_all('/\|pdb\|\K[^\|]*(?=\|)/', $def, $m);
 		if ($pn > 0) {
 			for ($i1 = 0; $i1 < $pn; $i1++) {
