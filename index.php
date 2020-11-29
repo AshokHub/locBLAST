@@ -24,19 +24,23 @@
 		document.getElementById('datalib').getElementsByTagName("option")[10].disabled = false;
 		document.getElementById('datalib').getElementsByTagName("option")[0].selected = true;
 	};
-	function download_fasta(filename, title, frm, to, seq) {
-		var text = "";
-		text += ">";
-		text += filename + " ";
-		text += title + " (";
-		text += frm + " to ";
-		text += to + ")";
-		text += seq;
-		var hiddenElement = document.createElement('a');
-		hiddenElement.href = 'data:text/fasta;charset=utf-8,' + encodeURIComponent(text);
-		hiddenElement.target = '_blank';
-		hiddenElement.download = filename + ".fasta";
-		hiddenElement.click();
+	function download_fasta(db, entry, acc_no, title, frm, to, seq) {
+		var xhttp = new XMLHttpRequest();
+		var params = "db=" + db + "&entry=" + entry + "&acc_no=" + acc_no + "&title=" + title + "&frm=" + frm + "&to=" + to + "&seq=" + seq;
+		xhttp.open('POST', 'download.php', true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.setRequestHeader("Content-length", params.length);
+		xhttp.setRequestHeader("Connection", "close");
+		xhttp.send(params);
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var hiddenElement = document.createElement('a');
+				hiddenElement.href = 'data:text/fasta;charset=utf-8,' + encodeURIComponent(this.responseText);
+				hiddenElement.target = '_blank';
+				hiddenElement.download = acc_no + ".fasta";
+				hiddenElement.click();
+			}
+		};
 	}
 	function blastUpdate() {
 		var request = new XMLHttpRequest();
@@ -498,9 +502,9 @@ if(isset($_POST['search']) || isset($_POST['advsearch'])) {
 	}
 	
 	$online_db = array('nr -remote', 'swissprot -remote', 'pdb -remote', 'pat -remote', 'refseq_protein -remote', 'refseq_rna -remote', 'est -remote');
-	$offline_db = array('db/test_na', 'db/test_aa', 'db/CDD/Smart', 'db/pdt');
+	$offline_db = array('db/test_na', 'db/test_aa', 'db/CDD/Smart', 'db/pdtdb');
 
-	$aa_db = array('nr -remote', 'swissprot -remote', 'pdb -remote', 'pat -remote', 'refseq_protein -remote', 'db/test_aa', 'db/CDD/Smart', 'db/pdt');
+	$aa_db = array('nr -remote', 'swissprot -remote', 'pdb -remote', 'pat -remote', 'refseq_protein -remote', 'db/test_aa', 'db/CDD/Smart', 'db/pdtdb');
 	$na_db = array('nr -remote', 'refseq_rna -remote', 'est -remote', 'db/test_na');
 
 	$blast_aa_program = array('blastp', 'deltablast', 'psiblast', 'rpsblast');
