@@ -30,14 +30,14 @@
 						<option value="db/test_na" id="test_na">Test Nucleotide Sequence</option>
 						<option value="db/test_aa" id="test_aa">Test Protein Sequence</option>
 						<option value="db/CDD/Smart" id="Smart">Test SMART v6.0 Domain Database (SMART)</option>
-						<option value="db/pdt" id="pdt">Phytochemical &amp; Drug Target Database (PDTDB)</option>
+						<option value="db/pdtdb" id="pdt">Phytochemical and Drug Target Database (PDTDB)</option>
 					</optgroup>
 				</select>
 			</div>
 			<div class="gap">
 				Enter sequence below in 
 				<abbr title="&gt;AHG23159.1 polyprotein, partial [Dengue virus 2]&#13;SYSMCTGKFKIVKEIAETQHGTIVIRVQYEGDGSPCKIPFEITDLEKRHVLGRLITVNPI&#13;VTEKDSPVNIEAEPPFGDSYIIIGVEPGQLKLNWFKKGSSIGQMFETTMRGAKRMAILGD&#13;TAWDFGSLGGVFTSIGKALHQVFGAIYGAAFSGVSWTMKILIGVIITWIGMNSRSTSLSV&#13;SLVLVGVVTLYLGAMVQADSGCVVSWKNKELKCGSGIFITDNVHTWTEQYKFQPESPSKL&#13;ASAIQKAHEEGICGIRSVTRLENLMWKQITPELNHILSENEVKLTIMTGD">FASTA</abbr>  format (<a style="font-size:small" onclick="javascript:document.getElementById('program').value='blastp';
-				document.getElementById('datalib').value='db/pdt';
+				document.getElementById('datalib').value='db/pdtdb';
 				document.getElementById('sequence').value='>AHG23159.1 polyprotein, partial [Dengue virus 2]\nSYSMCTGKFKIVKEIAETQHGTIVIRVQYEGDGSPCKIPFEITDLEKRHVLGRLITVNPI\nVTEKDSPVNIEAEPPFGDSYIIIGVEPGQLKLNWFKKGSSIGQMFETTMRGAKRMAILGD\nTAWDFGSLGGVFTSIGKALHQVFGAIYGAAFSGVSWTMKILIGVIITWIGMNSRSTSLSV\nSLVLVGVVTLYLGAMVQADSGCVVSWKNKELKCGSGIFITDNVHTWTEQYKFQPESPSKL\nASAIQKAHEEGICGIRSVTRLENLMWKQITPELNHILSENEVKLTIMTGD';" href="javascript:void()" title="Sample Protein Sequence">DEMO</a>)
 			</div>
 			<div class="gap">
