@@ -46,7 +46,7 @@
 		var request = new XMLHttpRequest();
 		request.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
-				document.getElementById('update_msg').innerHTML = '<a href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST" title="Download">' + this.responseText + '</a>';
+				document.getElementById('update_msg').innerHTML = this.responseText;
 			} else {
 				document.getElementById('update_msg').innerHTML = '<div id="loading"></div>';
 			}
