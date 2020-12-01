@@ -57,6 +57,7 @@ html, body {
 	font-size: 15px;
 	vertical-align: middle;
 	padding: 0 6px 0 6px;
+	color: green;
 }
 
 #loading {
