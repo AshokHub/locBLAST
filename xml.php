@@ -184,21 +184,6 @@
 	}
 
 	function annotate($def) {
-		$pbn = preg_match_all('/pdb\|\K[^\|]*(?=\|)/', $def, $m0);
-		if ($pbn > 0) {
-			for ($i0 = 0; $i0 < $pbn; $i0++) {
-				$id0[$i0] = $m0[0][$i0];
-			}
-			$id0 = array_unique($id0);
-			$id0 = array_filter($id0);
-			$id0 = array_values($id0);
-			if (!empty($id0)) {
-				$n0 = count($id0);
-				for ($i0 = 0; $i0 < $n0; $i0++) {
-					$def = preg_replace("/$id0[$i0]/", "<a href=\"http://www.rcsb.org/pdb/explore/explore.do?structureId=$id0[$i0]\" id='ilnk' target='_blank'>". $id0[$i0] . "</a>", $def);
-				}
-			}
-		}
 		$pn = preg_match_all('/\|pdb\|\K[^\|]*(?=\|)/', $def, $m);
 		if ($pn > 0) {
 			for ($i1 = 0; $i1 < $pn; $i1++) {
@@ -327,12 +312,14 @@
 	}
 
 	function btscre($Hsp_bit_score) {
-		if (($Hsp_bit_score < 100) && ($Hsp_bit_score > 10)) {
-			return sprintf("%.1f", $Hsp_bit_score);
-		} elseif ($Hsp_bit_score < 10) {
-			return sprintf("%.2f", $Hsp_bit_score);
+		if ($Hsp_bit_score > 100) {
+			return (int)$Hsp_bit_score;
 		} else {
-			return round($Hsp_bit_score);
+			if ($Hsp_bit_score > 10) {
+				return sprintf("%.1f", $Hsp_bit_score);
+			} else {
+				return sprintf("%.2f", $Hsp_bit_score);
+			}
 		}
 	}
 
@@ -915,7 +902,7 @@
 						//$sdef = def_split($Hit_id, $Hit_def); print annotate($sdef); 
 						?>
 						</td></tr>
-						<tr><td><a href='javascript:void(0)' id="dwn-fas" onclick="download_fasta('<?php print $Report->{'search-target'}->Target->db . "', '" . $hdscs[0][0] . "', '" . $Hit_accession . "', '" . $Hit_def . "', '" . $Hsp_hit_from . "', '" . $Hsp_hit_to . "', '" . seq_split($Hsp_hseq); ?>'); return false;" title="Save to Disk"><img src='data:image/png;base64,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' style="float:left; padding:0 5px 0 3px;"></a><?php print "<b>Length</b> = ". $Hit_len . ", <b>Score</b> =  " . btscre($Hsp_bit_score) . " bits (" . $Hsp_score . "), <b>Expect</b> = " . evfmt($Hsp_evalue) . ",";
+						<tr><td><a href='javascript:void(0)' id="dwn-fas" onclick="download_fasta('<?php print $Hit_accession . "', '" . $Hit_def . "', '" . $Hsp_hit_from . "', '" . $Hsp_hit_to . "', '" . seq_split($Hsp_hseq); ?>'); return false;" title="Save to Disk"><img src='data:image/png;base64,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' style="float:left; padding:0 5px 0 3px;"></a><?php print "<b>Length</b> = ". $Hit_len . ", <b>Score</b> =  " . btscre($Hsp_bit_score) . " bits (" . $Hsp_score . "), <b>Expect</b> = " . evfmt($Hsp_evalue) . ",";
 						if (isset($ialgn->{'query-frame'}) && isset($ialgn->{'hit-frame'})) {
 							print " <b>Frame</b> = ";
 							if ($Hsp_query_frame > 0) {
